@@ -7,17 +7,17 @@
 }
 
 .mission {
-  flex: 3; /* This will take up 60% of the space */
+  flex: 2; 
   background-color: #333;
   color: white;
   text-align: left;
-  font-size: 40px; 
+  font-size: 1.5vw; 
   padding-left: 10%; /* Changed to % for responsiveness */
   padding-top: 15%; /* Changed to % for responsiveness */
 }
 
 .app-demo {
-  flex: 2; /* This will take up 40% of the space */
+  flex: 3; /* This will take up 40% of the space */
 }
 
 textarea {
@@ -37,11 +37,11 @@ button {
   background-color: #a5a5a5;
   border: none;
   color: white;
-  padding: 20px 40px;
+  padding: 0.5vw 1vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1vw;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
