@@ -59,7 +59,14 @@ button:active {
   transform: translateY(4px);
 }
 
+.slogan {
+  font-size: 1vw;
+}
+
 @media (min-width: 2000px) { /* Large screens */
+  .slogan {
+    font-size: 20px;
+  }
   .mission {
     font-size: 38px; /* Maximum font size */
   }

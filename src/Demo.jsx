@@ -23,9 +23,12 @@ function Demo() {
   return (
     <div className="demo">
       <div className="mission">
-      <h3>"Founded by Employees,"<br/>
+      <h3>
+          Launching Next Team Vision
+      </h3>
+      <h7 className="slogan">"Founded by Employees,"<br/>
           "Empowering Employees:"<br/>
-          "Uncovering the Heartbeat of Corporate Culture."</h3>
+          "Uncovering the Heartbeat of Corporate Culture."</h7>
 
         <form onSubmit={handleFeedbackSubmit}>
           <textarea value={feedback} onChange={handleFeedbackChange} placeholder="Share your thought about this project" />
