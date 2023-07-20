@@ -101,6 +101,7 @@ header {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+  font-size: 0.9vw;
 }
 
 footer {
@@ -127,6 +128,7 @@ footer p {
 .user-info h4 {
   margin: 0;
   padding-left: 10px;
+  font-size: 1.2rem;
 }
 
 .user-career {
@@ -147,8 +149,8 @@ footer p {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  /* max-height: 1000px; */
   position: relative;
+  width: 100%;
 }
 
 .sidebar {

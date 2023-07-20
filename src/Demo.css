@@ -27,7 +27,7 @@ textarea {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 0.8vw;
   outline: none;
   color: #ffffff; 
   background-color: #333;
@@ -59,13 +59,17 @@ button:active {
   transform: translateY(4px);
 }
 
-@media (min-width: 1200px) { /* Large screens */
+@media (min-width: 2000px) { /* Large screens */
   .mission {
-    font-size: 40px; /* Maximum font size */
+    font-size: 38px; /* Maximum font size */
   }
   button {
     font-size: 12px; /* Maximum font size */
     padding: 12px 24px; /* Maximum padding */
+  }
+
+  textarea {
+    font-size: 20px;
   }
 }
 
