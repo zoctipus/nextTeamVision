@@ -1,20 +1,29 @@
+/* App.css */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
 .app {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 80px); 
+  height: 100vh; /* Set a fixed height to the viewport height */
+  overflow: auto; /* Make it scrollable when its content overflows */
 }
+
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 10vh; /* Percentage height */
   background-color: #333;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  padding: 1vh 2%; /* Percentage padding */
+  box-shadow: 0px 0px 1vh rgba(0,0,0,0.5);
   z-index: 1;
 }
 
@@ -24,24 +33,19 @@ header {
   font-size: 1.5em;
 }
 
-.logo img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-.home-icon img {
-  width: 30px;
-  height: 30px;
+.logo img, .home-icon img, .user-info img {
+  width: 5vw; /* Viewport width */
+  height: 5vh; /* Viewport height */
+  margin-right: 1vw;
 }
 
 .search-input {
   flex: 0.8;
-  height: 30px;
-  margin: 0 20px;
-  padding: 0 10px;
+  height: 4vh;
+  margin: 0 2%;
+  padding: 0 1%;
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 2vh;
 }
 
 .user-info {
@@ -51,38 +55,30 @@ header {
   font-size: 1.2em;
 }
 
-.user-info img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-/* existing .content rule */
 .content {
   flex: 1;
   display: flex;
-  flex-direction: row; /* default to row layout */
-  padding: 90px;
+  flex-direction: row; 
+  padding: 10vh 3%;
   overflow-y: auto;
-  width: 70%;
+  width: 100%; /* Full width */
   margin: auto;
 }
 
 /* add media query for small screens */
 @media (max-width: 798px) {
   .content {
-    flex-direction: column; /* switch to column layout on small screens */
+    flex-direction: column; 
   }
 }
 
 .media {
   flex: 1;
   background-color: rgb(234, 234, 234);
-  padding: 20px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  max-height: 800px;
+  padding: 2vh;
+  margin-bottom: 1vh;
+  border-radius: 0.5vh;
+  max-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +147,6 @@ footer p {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  aspect-ratio: 1;
   max-height: 1000px;
   position: relative;
 }
