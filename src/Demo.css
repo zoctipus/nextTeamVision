@@ -58,7 +58,7 @@ button:active {
   transform: translateY(4px);
 }
 
-@media (max-width: 2000px) { /* Phone screen */
+@media (max-width: 798px) { /* Phone screen */
   .demo {
     flex-direction: column;
   }

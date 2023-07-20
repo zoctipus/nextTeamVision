@@ -70,7 +70,7 @@ header {
 }
 
 /* add media query for small screens */
-@media (max-width: 1980px) {
+@media (max-width: 798px) {
   .content {
     flex-direction: column; /* switch to column layout on small screens */
   }
