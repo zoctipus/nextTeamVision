@@ -1,0 +1,176 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px); 
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.home-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.search-input {
+  flex: 0.8;
+  height: 30px;
+  margin: 0 20px;
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.user-info {
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* existing .content rule */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row; /* default to row layout */
+  padding: 90px;
+  overflow-y: auto;
+  width: 70%;
+  margin: auto;
+}
+
+/* add media query for small screens */
+@media (max-width: 1980px) {
+  .content {
+    flex-direction: column; /* switch to column layout on small screens */
+  }
+}
+
+.media {
+  flex: 1;
+  background-color: rgb(234, 234, 234);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(60, 60, 60);
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+}
+
+.posts {
+  flex: 5;
+  padding-left: 20px;
+}
+
+.post {
+  background-color: rgb(234, 234, 234);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h3 {
+  margin: 0 0 10px;
+}
+
+footer p {
+  margin: 0 0 5px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-info h4 {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.user-career {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 0.8em;
+  color: grey;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.box {
+  background-color: rgb(234, 234, 234);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  aspect-ratio: 1;
+  max-height: 1000px;
+  position: relative;
+}
+
+.sidebar {
+  flex: 9;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column; /* default to column layout */
+  gap: 20px;
+}
+
+@media (max-width: 2000px) {
+  .sidebar {
+    flex-direction: row; /* switch to row layout on small screens */
+    flex-wrap: wrap; /* allow the boxes to wrap onto the next line if there isn't enough space */
+  }
+}
+
+.box.highlights ul li {
+  margin-bottom: 10px;
+}

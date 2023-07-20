@@ -1,0 +1,79 @@
+.demo {
+  display: flex;
+  flex-direction: row; 
+  width: 100%;
+  height: 100vh; /* Ensure demo takes full height of viewport */
+}
+
+.mission {
+  flex: 3; /* This will take up 60% of the space */
+  background-color: #333;
+  color: white;
+  text-align: left;
+  font-size: 40px; 
+  padding-left: 10%; /* Changed to % for responsiveness */
+  padding-top: 15%; /* Changed to % for responsiveness */
+}
+
+.app-demo {
+  flex: 2; /* This will take up 40% of the space */
+}
+
+textarea {
+  display: block;
+  margin: 10px 0;
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  outline: none;
+  color: #ffffff; 
+  background-color: #333;
+}
+
+button {
+  background-color: #a5a5a5;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@media (max-width: 2000px) { /* Phone screen */
+  .demo {
+    flex-direction: column;
+  }
+
+  .mission, .app-demo {
+    flex: 1;
+  }
+
+  .mission {
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  textarea {
+    width: 90%;
+  }
+}
