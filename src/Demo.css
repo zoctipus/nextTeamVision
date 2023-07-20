@@ -59,6 +59,16 @@ button:active {
   transform: translateY(4px);
 }
 
+@media (min-width: 1200px) { /* Large screens */
+  .mission {
+    font-size: 40px; /* Maximum font size */
+  }
+  button {
+    font-size: 12px; /* Maximum font size */
+    padding: 12px 24px; /* Maximum padding */
+  }
+}
+
 @media (max-width: 798px) { /* Phone screen */
   .demo {
     flex-direction: column;
@@ -76,5 +86,15 @@ button:active {
 
   textarea {
     width: 90%;
+  }
+
+  @media (max-width: 300px) { /* Small screens */
+    .mission {
+      font-size: 16px; /* Minimum font size */
+    }
+    button {
+      font-size: 10px; /* Minimum font size */
+      padding: 10px 20px; /* Minimum padding */
+    }
   }
 }
